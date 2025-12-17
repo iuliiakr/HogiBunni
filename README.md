@@ -3,7 +3,7 @@
 <a href="https://www.loom.com/share/2952c30088ee4fc2885be3a799167dd0">
   <img src="hogibunni.png" width="300" alt="Demo Video" align="right" padding="15 0">
 </a>
-**HogiBunni** is an AI-powered travel itinerary builder that generates realistic, day-by-day plans using LLM reasoning grounded in Google Maps data—ensuring every suggested place exists, is locatable, and contextually appropriate.
+**HogiBunni** is an AI-powered travel itinerary builder that generates realistic, day-by-day plans using LLM reasoning grounded in Google Maps data - ensuring every suggested place exists, is locatable, and contextually appropriate.
 <p></p>
 
 The name is derived from the Kannada phrase **"Hogi Banni"** (ಹೋಗಿ ಬನ್ನಿ), which literally translates to "Go and return" - a heartwarming way to say goodbye to a traveler, ensuring they return safely.
