@@ -43,12 +43,9 @@ This project is a deliberately scoped V1 prototype that explores how an LLM can 
 4.  **Rendering**: The UI renders a timeline view with interactive feedback buttons.
 5.  **Refinement Loop**: User feedback is sent back to the LLM to regenerate specific time slots.
 
-## Design Trade-offs (Intentional for V1)
+## Future Roadmap
 
-Stateless by design: no user accounts, long-term storage, or personalization
-
-Optimized for clarity and iteration speed rather than scale
-
-Share/print implemented as shallow features to support usability without introducing identity or data-retention complexity
-
-If evolved beyond V1, the system could be extended with persistence, personalization, and scaling strategies, but those concerns are intentionally deferred to keep the prototype focused and inspectable.
+*   **Multi-City Trips**: Logic to handle "Road Trip" style itineraries spanning multiple locations.
+*   **User Accounts**: Move from 'localStorage' to a backend (Supabase/Firebase) to sync itineraries across devices.
+*   **Budget Calculator**: Real-time summation of estimated ticket costs.
+*   **Booking Integration**: Deep links to Reserve with Google for restaurants.
