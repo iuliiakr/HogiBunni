@@ -2,9 +2,8 @@
 
 ## Demo
 
-[![Demo video](https://cdn.loom.com/sessions/thumbnails/2952c30088ee4fc2885be3a799167dd0.jpg)](https://www.loom.com/share/2952c30088ee4fc2885be3a799167dd0)
+[![Demo video]](https://www.loom.com/share/2952c30088ee4fc2885be3a799167dd0)
 
-<div style="position: relative; padding-bottom: 56.25%; height: 0;"><iframe src="https://www.loom.com/embed/2952c30088ee4fc2885be3a799167dd0" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"></iframe></div>
 
 36-second silent demo showing the V1 flow: input -> orchestration -> structured output.
 
