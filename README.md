@@ -1,5 +1,13 @@
 # HogiBunni
 
+## Demo
+
+[![Demo video](https://cdn.loom.com/sessions/thumbnails/2952c30088ee4fc2885be3a799167dd0.jpg)](https://www.loom.com/share/2952c30088ee4fc2885be3a799167dd0)
+
+36-second silent demo showing the V1 flow: input -> orchestration -> structured output.
+
+
+
 ## Architecture Overview (V1)
 
 This project is a deliberately scoped V1 prototype that explores how an LLM can be integrated into a user-facing workflow for travel planning, with an emphasis on clarity, reliability, and architectural restraint.
