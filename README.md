@@ -5,13 +5,13 @@
 The name is derived from the Kannada phrase **"Hogi Banni"** (ಹೋಗಿ ಬನ್ನಿ), which literally translates to "Go and return" — a heartwarming way to say goodbye to a traveler, ensuring they return safely.
 ## Demo
 
-36-second silent demo showing the V1 flow: input -> orchestration -> structured output.
+**[36-second silent demo](https://www.loom.com/share/2952c30088ee4fc2885be3a799167dd0)** showing the V1 flow: input -> orchestration -> structured output.
 
 This repository documents a V1 prototype.  
 If you’re interested in trying the live version or sharing feedback, feel free to reach out.
 
 <a href="https://www.loom.com/share/2952c30088ee4fc2885be3a799167dd0">
-  <img src="hogibunni.png" width="700" alt="Demo Video">
+  <img src="hogibunni.png" width="300" alt="Demo Video">
 </a>
 
 ## ✨ Key Features
