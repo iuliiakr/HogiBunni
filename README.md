@@ -6,10 +6,10 @@ This project is a deliberately scoped V1 prototype that explores how an LLM can 
 
 The system follows a simple three-layer design:
 
-### Frontend (Web UI)
+### 1. Frontend (Web UI)
 The frontend collects user input (destination, dates, and a free-form description of the travel party), displays progress, and renders structured itinerary output. It also provides lightweight share and print views, implemented without user accounts or persistent user state.
 
-### Backend / Orchestration Layer
+### 2. Backend / Orchestration Layer
 The backend acts as a thin orchestration layer responsible for:
 
 - validating and normalizing user input
@@ -19,7 +19,7 @@ The backend acts as a thin orchestration layer responsible for:
 
 This layer intentionally contains the application logic, keeping the frontend simple and the LLM isolated behind a clear interface.
 
-### LLM Integration
+### 3. LLM Integration
 
 The LLM is used as a reasoning and generation component, not as an application controller. Prompt design and output constraints are used to reduce hallucinations and ensure consistently structured results suitable for direct user consumption.
 
