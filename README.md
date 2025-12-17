@@ -1,5 +1,5 @@
 # HogiBunni
-
+[![AI Travel Assistant - HogiBunni](screenshot.png)](https://hogibunni-359461687800.us-west1.run.app/)
 ## Demo
 
 [Demo video (Loom)](https://www.loom.com/share/2952c30088ee4fc2885be3a799167dd0)
