@@ -1,6 +1,10 @@
 # HogiBunni
 [![AI Travel Assistant - HogiBunni](hogibunni.png)](https://hogibunni-359461687800.us-west1.run.app/)
 
+<a href="https://www.loom.com/share/2952c30088ee4fc2885be3a799167dd0">
+  <img src="docs/demo-thumbnail.png" width="700" alt="Demo video">
+</a>
+
 ## Demo
 
 [Demo video (Loom)](https://www.loom.com/share/2952c30088ee4fc2885be3a799167dd0)
