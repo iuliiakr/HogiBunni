@@ -2,8 +2,7 @@
 
 ## Demo
 
-[![Demo video]](https://www.loom.com/share/2952c30088ee4fc2885be3a799167dd0)
-
+[Demo video (Loom)](https://www.loom.com/share/2952c30088ee4fc2885be3a799167dd0)
 
 36-second silent demo showing the V1 flow: input -> orchestration -> structured output.
 
