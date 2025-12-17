@@ -7,6 +7,7 @@
 <p></p>
 
 The name is derived from the Kannada phrase **"Hogi Banni"** (ಹೋಗಿ ಬನ್ನಿ), which literally translates to "Go and return" - a heartwarming way to say goodbye to a traveler, ensuring they return safely.
+<p>&nbsp;</p>
 
 ## Demo
 
@@ -14,6 +15,8 @@ The name is derived from the Kannada phrase **"Hogi Banni"** (ಹೋಗಿ ಬ�
 
 This repository documents a V1 prototype.  
 **If you’re interested in trying the live version, discussing the architecture, or sharing feedback, feel free to reach out.**
+
+<p>&nbsp;</p>
 
 ## Key Features
 
@@ -24,13 +27,20 @@ This repository documents a V1 prototype.
 *   **Local Persistence**: Saves traveler profiles and recent searches directly to your browser.
 *   **Shareable Plans**: Generate professional PDFs or copy formatted text summaries to share with friends.
 
+<p>&nbsp;</p>
+
 ## Architecture Overview (V1)
 
 This project is a deliberately scoped V1 prototype that explores how an LLM can be integrated into a user-facing workflow for travel planning, with an emphasis on clarity, reliability, and architectural restraint.
 
 *   **Frontend**: React 19 + TypeScript + Vite.
 *   **Styling**: Tailwind CSS with a custom "Warm & Optimistic" design system.
-*   **AI Engine**: Google Gemini API ('gemini-2.5-flash') via the '@google/genai' SDK.
+  
+*   **AI Engine**: Google Gemini API ('gemini-2.5-flash') via the '@google/genai' SDK. 
+    *   Chosen for tight integration with Google Search and Google Maps tooling.
+    *   Prioritizes fast iteration and reliable tool grounding over raw model benchmarking.
+    *   Model choice is intentionally flexible and can be swapped as requirements around cost, latency, or reasoning depth evolve.
+      
 *   **Data Sources**:
     *   **Google Maps Tool**: Used for verifying place existence, getting addresses, and ratings.
     *   **Google Search Tool**: Used for live weather forecasting and finding public images/pricing.
@@ -42,6 +52,21 @@ This project is a deliberately scoped V1 prototype that explores how an LLM can 
 4.  **Rendering**: The UI renders a timeline view with interactive feedback buttons.
 5.  **Refinement Loop**: User feedback is sent back to the LLM to regenerate specific time slots.
 
+<p>&nbsp;</p>
+
+## External APIs & Cost Considerations
+
+HogiBunni is designed as a V1 prototype with careful control over recurring API costs.
+
+*   **Weather & Holiday Data**  
+    Currently sourced via Google Search grounding to avoid introducing additional paid APIs during early validation.  
+    The architecture supports replacing this with a dedicated Weather API (e.g., OpenWeather, Tomorrow.io) once usage patterns justify the cost.
+
+*   **Design Principle**  
+    Paid APIs are introduced only when they materially improve user experience beyond what can be achieved through existing grounded search tools.
+
+<p>&nbsp;</p>
+
 ## Future Roadmap
 
 *   **Flexible Planning**: Drag-and-drop functionality to move activities from one day to another.
@@ -51,3 +76,7 @@ This project is a deliberately scoped V1 prototype that explores how an LLM can 
 *   **User Accounts**: Transition from local storage to cloud accounts (Supabase/Firebase) for long-term storage of trips and traveler profiles.
 *   **Post-Travel Reviews**: Ability for users to rate places after they visit to improve future AI recommendations.
 *   **Curated Lists**: Users can create and publish their own "Recommended Lists" of places for the community.
+
+This project intentionally focuses on reliability, grounding, and iterative UX over feature breadth.
+Future work will prioritize collaboration and long-term trip management once core planning trust is established.
+<p>&nbsp;</p>
