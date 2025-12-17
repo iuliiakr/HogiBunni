@@ -29,25 +29,19 @@ If you’re interested in trying the live version or sharing feedback, feel free
 
 This project is a deliberately scoped V1 prototype that explores how an LLM can be integrated into a user-facing workflow for travel planning, with an emphasis on clarity, reliability, and architectural restraint.
 
-The system follows a simple three-layer design:
+*   **Frontend**: React 19 + TypeScript + Vite.
+*   **Styling**: Tailwind CSS with a custom "Warm & Optimistic" design system.
+*   **AI Engine**: Google Gemini API ('gemini-2.5-flash') via the '@google/genai' SDK.
+*   **Data Sources**:
+    *   **Google Maps Tool**: Used for verifying place existence, getting addresses, and ratings.
+    *   **Google Search Tool**: Used for live weather forecasting and finding public images/pricing.
 
-### 1. Frontend (Web UI)
-The frontend collects user input (destination, dates, and a free-form description of the travel party), displays progress, and renders structured itinerary output. It also provides lightweight share and print views, implemented without user accounts or persistent user state.
-
-### 2. Backend / Orchestration Layer
-The backend acts as a thin orchestration layer responsible for:
-
-- validating and normalizing user input
-- constructing prompts
-- invoking the LLM
-- post-processing the response into a predictable, structured format
-
-This layer intentionally contains the application logic, keeping the frontend simple and the LLM isolated behind a clear interface.
-
-### 3. LLM Integration
-
-The LLM is used as a reasoning and generation component, not as an application controller. Prompt design and output constraints are used to reduce hallucinations and ensure consistently structured results suitable for direct user consumption.
-
+### Data Flow
+1.  **User Input**: Location, Dates, Traveler Profile.
+2.  **LLM Reasoning**: Gemini generates a logical flow (Morning -> Night).
+3.  **Grounding**: The model queries Google Maps to verify every venue.
+4.  **Rendering**: The UI renders a timeline view with interactive feedback buttons.
+5.  **Refinement Loop**: User feedback is sent back to the LLM to regenerate specific time slots.
 
 ## Design Trade-offs (Intentional for V1)
 
