@@ -45,7 +45,10 @@ This project is a deliberately scoped V1 prototype that explores how an LLM can 
 
 ## Future Roadmap
 
-*   **Multi-City Trips**: Logic to handle "Road Trip" style itineraries spanning multiple locations.
-*   **User Accounts**: Move from 'localStorage' to a backend (Supabase/Firebase) to sync itineraries across devices.
+*   **Flexible Planning**: Drag-and-drop functionality to move activities from one day to another.
+*   **Daily Route Maps**: Interactive map visualization for each day with highlighted routes to visualize commute and clustering.
+*   **User Accounts**: Transition from local storage to cloud accounts (Supabase/Firebase) for long-term storage of trips and traveler profiles.
+*   **Social Collaboration**: Invite friends to a "Trip" to collectively vote on, approve, or delete activities in real-time until the itinerary is finalized.
+*   **Post-Travel Reviews**: Ability for users to rate places after they visit to improve future AI recommendations.
+*   **Curated Lists**: Users can create and publish their own "Recommended Lists" of places for the community.
 *   **Budget Calculator**: Real-time summation of estimated ticket costs.
-*   **Booking Integration**: Deep links to Reserve with Google for restaurants.
