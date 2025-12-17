@@ -2,12 +2,11 @@
 
 ## Demo
 
+36-second silent demo showing the V1 flow: input -> orchestration -> structured output.
+
 <a href="https://www.loom.com/share/2952c30088ee4fc2885be3a799167dd0">
   <img src="hogibunni.png" width="700" alt="Demo Video">
 </a>
-
-36-second silent demo showing the V1 flow: input -> orchestration -> structured output.
-
 
 
 ## Architecture Overview (V1)
